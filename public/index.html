@@ -16,7 +16,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-light text-warning bg-dark justify-content-between header">
+     <nav class="navbar navbar-light text-warning bg-dark justify-content-between header">
       <a href="/">
         <div class="navbar-brand">Vest Rock</div>
       </a>
@@ -26,30 +26,51 @@
           <button id="btn-busca" class="btn  my-2 my-sm-0" type="submit">Coleção</button>
         </a>
       </form>
-      <button class="navbar-brand bg-dark carrinho">
+      <button type="button" id="chamarModal" class="navbar-brand bg-dark carrinho" data-toggle=" modal" data-target="#exampleModalCenter">
         <p id="carrinho" class="text-warning">
-          <i class="fas fa-shopping-cart text-warning"></i>
+          <i class="fas fa-shopping-cart text-warning"></i>&nbsp
+          <div id="result"></div>
         </p>
       </button>
-      <div id="result"></div>
     </nav>
-
   </header>
+   
+
   <section class="row">
     <div class="col-sm-1"></div>
     <main class="col-sm-12" id="exibe-busca">
-      <div class="d-flex justify-content-center  mb-3 ">
+      <div class="d-flex justify-content-center mb-3 ">
         <img src="dist/bands.jpg" class="img-fluid" alt="Responsive image">
       </div>
     </main>
-
-    <div class="col-sm-1"></div>
   </section>
-
-  <!-- <main id="exibe-busca">
-
-  </main> -->
-
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Escolher forma de pagamento</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="radio">
+            <label><input type="radio" name="optradio" checked>Cartão de Crédito</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">Boleto</label>
+          </div>
+          <div class="radio disabled">
+            <label><input type="radio" name="optradio" disabled>Vale troca</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Finalizar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="footer">
@@ -65,8 +86,8 @@
         </li>
       </ul>
     </div>
-
   </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
