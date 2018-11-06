@@ -2,15 +2,11 @@ body {
   margin: 0;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 1em;
-  background-color: white;
+  background-color: #343a40;
   color:red;
 }
-.header {
-  padding: 10px 40px;
-}
-.header .formulario {
-  display: flex;
-  flex-direction: row;
+.row{
+	margin-top:  0;	
 }
 i{
   color:red;
@@ -70,3 +66,14 @@ footer li {
 a{
   color:#ffc107;
 }
+main{
+  display:flex;
+  flex-wrap: wrap; 
+ }
+
+ #result{
+  color: #fff;
+ }
+ footer{
+  width: 100%;
+ }
