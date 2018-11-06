@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1em;
+  background-color: #343a40;
+  color:red;
+}
+.row{
+	margin-top:  0;	
+}
+i{
+  color:red;
+}
+#btn-busca{
+  color:#ffc107;
+  background-color: black;
+}
+.area-produto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px;
+}
+.produto .imagens {
+  width: 9rem;
+}
+.carrinho {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 0px;
+}
+.carrinho p {
+  margin: 0em;
+}
+footer {
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  bottom: 0;
+  display: table;
+  margin: 0 auto;
+  list-style: none;
+  background-color: #343a40;
+  width: 100%;
+  position: fixed;
+}
+footer ul li {
+  display: inline-block;
+}
+footer li {
+  text-decoration: none;
+  display: block;
+  border-collapse: separate;
+  width: 65px;
+  height: 45px;
+  margin-top: 15px;
+  color:#343a40;
+}
+a{
+  color:#ffc107;
+}
+main{
+  display:flex;
+  flex-wrap: wrap; 
+ }
+
+ #result{
+  color: #fff;
+ }
+ footer{
+  width: 100%;
+ }
